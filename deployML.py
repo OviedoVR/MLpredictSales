@@ -58,7 +58,7 @@ input_data[['TV', 'Radio', 'Newspaper']] = scaler.transform(input_data[['TV', 'R
 if st.button('Predizer'):
     resultado = modelo.predict(input_data)
     resultado = (resultado[0].item())
-    st.markdown(f"### Vendas: {resultado}")
+    st.markdown(f"### Vendas: {int(resultado)}")
 
 
 st.markdown('---')
